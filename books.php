@@ -68,7 +68,7 @@
                     echo "<td>" . $row['stock'] . "</td>";
                     echo "<td>
                         <a href='book_detail.php?id=" . $row['id'] . "' class='btn-small'>Détails</a>";
-                    if(isset($_SESSION['user_email']) && $_SESSION['user_email'] === 'admin@admin.admin') {
+                    if(isset($_SESSION['user_email']) && $_SESSION['user_email'] === 'admin@admin.com') {
                         echo " | <a href='admin_edit_book.php?id=" . $row['id'] . "' class='btn-small'>Modifier</a>";
                     }
                     echo "</td>";
