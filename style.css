@@ -529,6 +529,15 @@ header nav a.active::after {
     box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
 }
 
+.btn-delete {
+    background: linear-gradient(135deg, var(--error) 0%, #dc2626 100%);
+    margin-left: 0.5rem;
+}
+
+.btn-delete:hover {
+    box-shadow: 0 8px 20px rgba(239, 68, 68, 0.3);
+}
+
 @media (max-width: 768px) {
     .btn {
         width: 100%;
@@ -732,6 +741,17 @@ header nav a.active::after {
 
 .form-section button {
     width: 100%;
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.button-group button {
+    width: auto !important;
 }
 
 @media (max-width: 768px) {
