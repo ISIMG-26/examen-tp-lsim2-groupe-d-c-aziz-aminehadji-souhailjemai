@@ -47,7 +47,6 @@
             <table class="books-table">
                 <thead>
                 <tr>
-                    <th>ID</th>
                     <th>Titre</th>
                     <th>Auteur</th>
                     <th>Prix</th>
@@ -60,7 +59,6 @@
                 <?php
                 while($row = mysqli_fetch_assoc($result)) {
                     echo "<tr>";
-                    echo "<td>" . $row['id'] . "</td>";
                     echo "<td>" . $row['titre'] . "</td>";
                     echo "<td>" . $row['auteur'] . "</td>";
                     echo "<td>" . $row['prix'] . " TND</td>";
