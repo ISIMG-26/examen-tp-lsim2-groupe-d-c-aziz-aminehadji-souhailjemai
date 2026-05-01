@@ -23,17 +23,6 @@ CREATE TABLE IF NOT EXISTS books (
     date_ajout TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-
-CREATE TABLE IF NOT EXISTS orders (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    user_id INT NOT NULL,
-    book_id INT NOT NULL,
-    quantite INT NOT NULL,
-    prix_total DECIMAL(10, 2),
-    date_commande TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (user_id) REFERENCES users(id),
-    FOREIGN KEY (book_id) REFERENCES books(id)
-);
 INSERT INTO users (nom, email, password) 
 VALUES ('admin', 'admin@admin.com', '$2y$10$3zIG7.Jpze53nejAjwbQCeGQheFhN8pTFFaEPUOighmD8W815tUbW');
 
