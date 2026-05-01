@@ -43,7 +43,10 @@
                     Stock: <input type="number" name="stock" value="<?php echo $row['stock']; ?>" required><br><br>
                     Description: <textarea name="description" required><?php echo $row['description']; ?></textarea><br><br>
                     
-                    <button type="submit" class="btn">Mettre à jour</button>
+                    <div class="button-group">
+                        <button type="submit" name="action" value="update" class="btn">Mettre à jour</button>
+                        <button type="submit" name="action" value="delete" class="btn btn-delete" onclick="return confirm('Êtes-vous sûr de vouloir supprimer ce livre ? Cette action est irréversible.');">Supprimer le livre</button>
+                    </div>
                 </form>
                 <a href="books.php" class="btn-back">← Retour</a>
             </section>
